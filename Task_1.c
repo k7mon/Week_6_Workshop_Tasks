@@ -32,9 +32,8 @@ int main()
     printf("Enter the string: ");
     scanf("%s", string_1);
     filter_ascending(string_1);
-    printf("The modified string is going to be: ");
+    printf("The modified string is: ");
     printf("%s\n", string_1);
-    printf("\n");
 	return 0;
 }
 
@@ -42,11 +41,11 @@ void filter_ascending(char* string_1)
 {
     for (int i = 1; i < strlen(string_1); i++)
     {
-        for (int j = 0; string_1[j+2] != '\0'; j++)
+        for (int j = 0; string_1[j+1] != '\0'; j++) // j+2 > j+1
         {
             if (string_1[j] > string_1[j+1])
             {
-                for (int k = 0; string_1[k] != '\0'; k++)
+                for (int k = j+1; string_1[k] != '\0'; k++) // change from k = 0 > k=j+1
                 {
                     string_1[k] = string_1[k+1];
                 }
