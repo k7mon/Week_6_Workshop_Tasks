@@ -52,6 +52,7 @@ int main() {
     while (temp > 0)
     {
         insert_node(&treePtr, temp);
+
         printf("Enter the value of the new data member: ");
         scanf("%d", &temp);            
     }
@@ -99,7 +100,17 @@ void inOrder(struct node* treePtr)
 
 void delete_tree(struct node** treePtr)
 {
-       free(*treePtr);
-	   delete_tree(&((*treePtr)->leftPtr));
-       delete_tree(&((*treePtr)->rightPtr));
+    
+	if (*treePtr != NULL){
+		delete_tree(&((*treePtr)->leftPtr));
+    	delete_tree(&((*treePtr)->rightPtr));
+		free(*treePtr);
+		*treePtr = NULL;
+	}
+		// free(*treePtr);
+	
+	//    delete_tree(&((*treePtr)->leftPtr));
+    //    delete_tree(&((*treePtr)->rightPtr));
+	//    free(*treePtr);
+	   
 }
