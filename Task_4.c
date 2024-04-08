@@ -4,11 +4,11 @@
 *******************************************************************************************************
 Consider the following C program and answer the following questions:
 1. Describe what the compute_array() function in the code does?
-Answer: 
+Answer: this is??
 
 2. Is the program memory safe? If not, how could the program be made memory safe while retaining its
 original functionality?
-Answer:
+Answer: this is??
 
 *******************************************************************************************************
 */
