@@ -107,10 +107,9 @@ void delete_tree(struct node** treePtr)
 		free(*treePtr);
 		*treePtr = NULL;
 	}
-		// free(*treePtr);
-	
-	//    delete_tree(&((*treePtr)->leftPtr));
-    //    delete_tree(&((*treePtr)->rightPtr));
-	//    free(*treePtr);
+	// free(*treePtr);
+	// delete_tree(&((*treePtr)->leftPtr));
+    // delete_tree(&((*treePtr)->rightPtr));
+	// free(*treePtr);
 	   
 }
