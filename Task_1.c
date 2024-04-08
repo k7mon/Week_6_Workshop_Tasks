@@ -34,6 +34,7 @@ int main()
     filter_ascending(string_1);
     printf("The modified string is going to be not: ");
     printf("%s\n", string_1);
+    printf("\n");
 	return 0;
 }
 
